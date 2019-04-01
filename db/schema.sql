@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS townify_db;
+CREATE DATABASE townify_db;

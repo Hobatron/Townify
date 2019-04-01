@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-4">
+      <div class="row block">
+        <ul>
+          <li>
+            <h3>Welcome to Townify!</h3>
+          </li>
+          <li>This website is designed to bring communities together by removing real currency value from time and
+            objects by
+            implementing a barter and trade system.</li>
+          <li>Please read the rules and <a href="/createAccount">create an account</a> prior to using the site, thanks!
+          </li>
+        </ul>
+      </div>
+      <div class="row block">
+        <ul>
+          <li>
+            <h3>Catagories</h3>
+          </li>
+          <li id="Personal">Personal Services</li>
+          <li id="Marketing">Marketing and Sales</li>
+          <li id="Home">Home Services</li>
+          <li id="Computer">Computer and Technology</li>
+          <li id="Children">Children Services</li>
+          <li id="Event">Event Services</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-5 block">
+      {{#each Leaflets}}
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">{{title}}</h5>
+          <p class="card-text">{{summary}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
